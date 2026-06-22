@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# SQLite database
+server/qr_codes.db
+
+# Environment
+.env
+.env.local
+
+# Build output
+client/dist/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*

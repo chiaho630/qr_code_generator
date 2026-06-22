@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f5f0e8;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    color: #1a1a1a;
+  }
+}
+
+@layer components {
+  /* Sketch card — white box with offset ink shadow */
+  .card-sketch {
+    @apply bg-white border-2 border-ink rounded-sm;
+    box-shadow: 4px 4px 0 0 #1a1a1a;
+  }
+
+  /* Primary button */
+  .btn-ink {
+    @apply bg-ink text-white border-2 border-ink font-semibold
+           transition-all duration-100 cursor-pointer;
+    box-shadow: 3px 3px 0 0 #1a1a1a;
+  }
+  .btn-ink:hover:not(:disabled) {
+    box-shadow: 1px 1px 0 0 #1a1a1a;
+    transform: translate(2px, 2px);
+  }
+  .btn-ink:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  /* Outline button */
+  .btn-outline {
+    @apply bg-cream text-ink border-2 border-ink font-semibold
+           transition-all duration-100 cursor-pointer;
+    box-shadow: 3px 3px 0 0 #1a1a1a;
+  }
+  .btn-outline:hover:not(:disabled) {
+    @apply bg-ink text-white;
+    box-shadow: 1px 1px 0 0 #1a1a1a;
+    transform: translate(2px, 2px);
+  }
+  .btn-outline:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  /* Danger outline button */
+  .btn-danger {
+    @apply bg-cream text-red-700 border-2 border-red-700 font-semibold
+           transition-all duration-100 cursor-pointer;
+    box-shadow: 3px 3px 0 0 #b91c1c;
+  }
+  .btn-danger:hover:not(:disabled) {
+    @apply bg-red-700 text-white;
+    box-shadow: 1px 1px 0 0 #b91c1c;
+    transform: translate(2px, 2px);
+  }
+  .btn-danger:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  /* Sketch text input */
+  .input-sketch {
+    @apply w-full border-2 border-ink bg-white px-4 py-3
+           text-base text-ink placeholder-gray-400
+           focus:outline-none rounded-sm;
+    transition: box-shadow 0.1s;
+  }
+  .input-sketch:focus {
+    box-shadow: 3px 3px 0 0 #1a1a1a;
+  }
+}
