@@ -4,6 +4,12 @@ A dynamic QR code system built with Node.js + Express (backend) and React + Vite
 
 ---
 
+## App
+
+![App screenshot](docs/app-screenshot.png)
+
+---
+
 ## Infrastructure
 
 ![Infrastructure diagram](docs/infrastructure.svg)
