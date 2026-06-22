@@ -4,7 +4,7 @@
 
   <rect width="860" height="620" fill="#f5f0e8" rx="0"/>
 
-  <text x="430" y="18" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a1a">QR Code Generator — Infrastructure</text>
+  <text x="430" y="18" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a1a">QR Code Generator — Architecture</text>
 
   <!-- BROWSER -->
   <rect x="30" y="60" width="150" height="64" rx="4" fill="white" stroke="#1a1a1a" stroke-width="2"/>
