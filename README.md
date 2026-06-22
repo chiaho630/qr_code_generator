@@ -10,9 +10,9 @@ A dynamic QR code system built with Node.js + Express (backend) and React + Vite
 
 ---
 
-## Infrastructure
+## Architecture
 
-![Infrastructure diagram](docs/infrastructure.svg)
+![Architecture diagram](docs/architecture.svg)
 
 The Vite dev server proxies `/api/*` and `/r/*` to Express on port 8000, so the browser never calls the backend directly in development.
 
