@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../images/BabaLab.png';
+import logo from '../images/babalabs_logo.png';
 
 async function apiFetch(path, options = {}) {
   const res = await fetch(path, {
@@ -318,7 +318,7 @@ export default function App() {
         <div className="max-w-3xl mx-auto px-6 py-5 flex items-center gap-5">
           <img src={logo} alt="Baba Lab" className="h-20 w-auto" />
           <div>
-            <p className="font-hand text-sm text-gray-400 uppercase tracking-widest -mb-1">by baba lab</p>
+            <p className="font-hand text-sm text-gray-400 uppercase tracking-widest -mb-1">by baba labs</p>
             <h1 className="font-hand text-4xl text-ink leading-tight">QR Code Generator</h1>
           </div>
         </div>
